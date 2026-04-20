@@ -47,8 +47,6 @@ const explorations = [
   },
 ];
 
-export const ProjectsRoute = ProjectsPage;
-
 function ProjectsPage() {
   return (
     <div className="container-editorial py-20 md:py-28">
