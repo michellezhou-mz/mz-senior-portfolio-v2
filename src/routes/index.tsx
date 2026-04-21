@@ -71,7 +71,7 @@ function HomePage() {
               <div className="relative">
                 <div className="absolute -inset-4 -z-10 rounded-sm bg-secondary/60" />
                 <img
-                  src="/lovable-uploads/aa42ea2e-14e9-4084-903b-a2a3ac666c24.png"
+                  src="/lovable-uploads/934d0655-68c5-4e02-b035-7ab5ba107aa8.png"
                   alt="Editorial composition of warm light, stone and forest tones"
                   width={1536}
                   height={1280}
