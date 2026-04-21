@@ -40,9 +40,7 @@ function HomePage() {
                 <span className="italic text-foreground/80">clearer futures.</span>
               </h1>
               <p className="reveal reveal-delay-2 mt-10 max-w-xl text-base leading-relaxed text-foreground/80 md:text-lg">
-                A strategic design leader shaping meaningful products, clearer
-                futures, and stronger teams. I work across product, service and
-                enterprise — turning ambiguity into elegant, human outcomes.
+                Located in Sydney, open to remote work globally.
               </p>
 
               <div className="reveal reveal-delay-3 mt-10 flex flex-wrap items-center gap-5">
@@ -50,7 +48,7 @@ function HomePage() {
                   to="/work"
                   className="group inline-flex items-center gap-3 rounded-sm bg-primary px-6 py-4 font-accent text-xs uppercase tracking-[0.2em] text-primary-foreground transition-all hover:bg-primary/90"
                 >
-                  See selected work
+                  VIEW PROJECTS
                   <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
                 </Link>
                 <Link
