@@ -36,7 +36,7 @@ function HomePage() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="container-editorial pt-16 pb-20 md:pt-24 md:pb-32">
-          <div className="grid gap-12 md:grid-cols-3 md:gap-10">
+          <div className="grid gap-12 md:grid-cols-3 md:gap-10 md:items-center">
             <div className="md:col-span-2">
               <p className="eyebrow reveal text-muted-foreground">
                 G'day — I'm Michelle
