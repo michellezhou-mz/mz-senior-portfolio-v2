@@ -74,7 +74,6 @@ function HomePage() {
                   style={{ boxShadow: "var(--shadow-editorial)" }}
                 />
               </div>
-              </div>
             </div>
           </div>
         </div>
