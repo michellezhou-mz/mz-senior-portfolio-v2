@@ -35,11 +35,9 @@ function HomePage() {
                 G'day — I'm Michelle
               </p>
               <h1 className="display reveal reveal-delay-1 mt-6 text-[2.75rem] text-foreground sm:text-6xl md:text-[5.25rem]">
-                Build what matters.
-                <br />
-                <span className="text-primary">Lead what's next.</span>
-                <br />
-                <span className="italic text-foreground/80">Stay grounded.</span>
+                Shaping <span className="text-primary">meaningful products</span>,
+                stronger teams, and{" "}
+                <span className="italic text-foreground/80">clearer futures.</span>
               </h1>
               <p className="reveal reveal-delay-2 mt-10 max-w-xl text-base leading-relaxed text-foreground/80 md:text-lg">
                 A strategic design leader shaping meaningful products, clearer
