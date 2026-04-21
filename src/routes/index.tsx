@@ -119,9 +119,11 @@ function HomePage() {
 
         <div className="mt-16 grid gap-x-10 gap-y-20 md:grid-cols-12">
           {featured.map((p, i) => (
-            <article
+            <Link
               key={p.slug}
-              className={`group md:col-span-6 ${i === 1 ? "md:mt-24" : ""}`}
+              to="/work/$slug"
+              params={{ slug: p.slug }}
+              className={`group block md:col-span-6 ${i === 1 ? "md:mt-24" : ""}`}
             >
               <div className="overflow-hidden rounded-sm bg-secondary">
                 <img
@@ -133,16 +135,31 @@ function HomePage() {
                   className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
               </div>
-              <div className="mt-6 flex items-center gap-3">
-                <span className="eyebrow text-muted-foreground">{p.discipline}</span>
-                <span className="h-px w-8 bg-border" />
-                <span className="eyebrow text-muted-foreground">{p.year}</span>
+              <div className="mt-6 flex flex-wrap items-center gap-2">
+                {p.tags.slice(0, 3).map((t) => (
+                  <span
+                    key={t}
+                    className="rounded-full border border-border px-3 py-1 font-accent text-[10px] uppercase tracking-[0.22em] text-muted-foreground"
+                  >
+                    {t}
+                  </span>
+                ))}
               </div>
-              <h3 className="mt-3 font-serif text-3xl text-foreground md:text-4xl">
+              <h3 className="mt-4 font-serif text-3xl text-foreground transition-colors group-hover:text-primary md:text-4xl">
                 {p.title}
               </h3>
-              <p className="mt-3 max-w-md text-foreground/75">{p.tagline}</p>
-            </article>
+              <p className="mt-3 max-w-md font-serif text-lg italic text-foreground/85">
+                {p.subtitle}
+              </p>
+              <p className="mt-4 max-w-md text-sm leading-relaxed text-foreground/75">
+                <span className="eyebrow mr-2 text-primary">Impact</span>
+                {p.impact}
+              </p>
+              <span className="mt-5 inline-flex items-center gap-2 font-accent text-xs uppercase tracking-[0.22em] text-foreground link-underline">
+                View case study
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
           ))}
         </div>
       </section>
