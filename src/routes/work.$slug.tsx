@@ -27,7 +27,7 @@ export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
     const project = projects.find((p) => p.slug === params.slug);
     if (!project) throw notFound();
-    return project;
+    return { project };
   },
   notFoundComponent: () => (
     <div className="container-editorial py-32 text-center">
@@ -47,7 +47,7 @@ export const Route = createFileRoute("/work/$slug")({
 });
 
 function CaseStudyPage() {
-  const project = Route.useLoaderData();
+  const { project } = Route.useLoaderData();
   const others = projects.filter((p) => p.slug !== project.slug).slice(0, 2);
 
   return (
