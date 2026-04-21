@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 
 const links = [
   { to: "/work" as const, label: "Work" },
+  { to: "/about" as const, label: "About" },
   { to: "/contact" as const, label: "Contact" },
 ];
 
