@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
-  const featured = projects.filter((p) => p.featured);
+  const featured = projects;
 
   return (
     <>
@@ -44,13 +44,13 @@ function HomePage() {
               </p>
 
               <div className="reveal reveal-delay-3 mt-10 flex flex-wrap items-center gap-5">
-                <Link
-                  to="/work"
+                <a
+                  href="#selected-work"
                   className="group inline-flex items-center gap-3 rounded-sm bg-primary px-6 py-4 font-accent text-xs uppercase tracking-[0.2em] text-primary-foreground transition-all hover:bg-primary/90"
                 >
                   VIEW PROJECTS
                   <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
-                </Link>
+                </a>
                 <Link
                   to="/contact"
                   className="font-accent text-xs uppercase tracking-[0.2em] text-foreground link-underline"
@@ -100,21 +100,13 @@ function HomePage() {
       </section>
 
       {/* SELECTED WORK */}
-      <section className="container-editorial py-24 md:py-32">
-        <div className="flex items-end justify-between gap-6">
-          <div>
-            <p className="eyebrow text-muted-foreground">Selected Work</p>
-            <h2 className="display mt-4 text-4xl text-foreground md:text-6xl">
-              Operating across <br className="hidden md:inline" />
-              ambiguity & scale.
-            </h2>
-          </div>
-          <Link
-            to="/work"
-            className="hidden font-accent text-xs uppercase tracking-[0.2em] text-foreground link-underline md:inline-block"
-          >
-            All work →
-          </Link>
+      <section id="selected-work" className="container-editorial py-24 md:py-32 scroll-mt-24">
+        <div>
+          <p className="eyebrow text-muted-foreground">Selected Work</p>
+          <h2 className="display mt-4 text-4xl text-foreground md:text-6xl">
+            Operating across <br className="hidden md:inline" />
+            ambiguity & scale.
+          </h2>
         </div>
 
         <div className="mt-16 grid gap-x-10 gap-y-20 md:grid-cols-12">
