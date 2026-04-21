@@ -55,7 +55,7 @@ function HomePage() {
                   to="/contact"
                   className="font-accent text-xs uppercase tracking-[0.2em] text-foreground link-underline"
                 >
-                  Start a conversation
+                  Talk with Michelle
                 </Link>
               </div>
             </div>
@@ -64,11 +64,11 @@ function HomePage() {
               <div className="relative">
                 <div className="absolute -inset-4 -z-10 rounded-sm bg-secondary/60" />
                 <img
-                  src={heroImage}
+                  src="/lovable-uploads/aa42ea2e-14e9-4084-903b-a2a3ac666c24.png"
                   alt="Editorial composition of warm light, stone and forest tones"
                   width={1536}
                   height={1280}
-                  className="aspect-[4/5] w-full rounded-sm object-cover"
+                  className="aspect-[4/5] w-full rounded-sm object-cover mt-0 mb-0 my-[32px]"
                   style={{ boxShadow: "var(--shadow-editorial)" }}
                 />
               </div>
@@ -233,7 +233,7 @@ function HomePage() {
                 to="/contact"
                 className="inline-flex items-center gap-3 rounded-sm bg-warm-white/10 px-6 py-4 font-accent text-xs uppercase tracking-[0.22em] text-primary-foreground ring-1 ring-primary-foreground/30 backdrop-blur transition-colors hover:bg-primary-foreground hover:text-primary"
               >
-                Start a conversation →
+                Talk with Michelle →
               </Link>
             </div>
           </div>

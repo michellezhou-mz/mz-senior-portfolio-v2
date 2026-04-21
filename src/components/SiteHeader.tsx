@@ -14,8 +14,8 @@ export function SiteHeader() {
           <span className="font-serif text-xl tracking-tight text-foreground md:text-[1.35rem]">
             Michelle Zhou
           </span>
-          <span className="eyebrow hidden text-muted-foreground sm:inline">
-            Design Lead
+          <span className="eyebrow hidden text-muted-foreground sm:inline mx-0">
+            Senior Designer
           </span>
         </Link>
 
