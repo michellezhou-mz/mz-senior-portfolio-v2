@@ -16,8 +16,7 @@ export function SiteFooter() {
           <div className="md:col-span-3">
             <p className="eyebrow text-muted-foreground">Navigate</p>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><Link to="/work" className="link-underline">Work</Link></li>
-              <li><Link to="/projects" className="link-underline">Projects</Link></li>
+              <li><Link to="/" className="link-underline">Home</Link></li>
               <li><Link to="/contact" className="link-underline">Contact</Link></li>
             </ul>
           </div>

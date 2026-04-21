@@ -36,10 +36,10 @@ export const Route = createFileRoute("/work/$slug")({
         Case study not found.
       </h1>
       <Link
-        to="/work"
+        to="/"
         className="mt-10 inline-flex items-center gap-3 rounded-sm bg-primary px-6 py-4 font-accent text-xs uppercase tracking-[0.2em] text-primary-foreground"
       >
-        Back to all work →
+        Back home →
       </Link>
     </div>
   ),
@@ -56,10 +56,10 @@ function CaseStudyPage() {
       {/* HERO */}
       <header className="container-editorial pt-20 pb-16 md:pt-28 md:pb-24">
         <Link
-          to="/work"
+          to="/"
           className="font-accent text-xs uppercase tracking-[0.22em] text-muted-foreground link-underline"
         >
-          ← All work
+          ← Back home
         </Link>
 
         <div className="mt-10 grid gap-10 md:grid-cols-12 md:gap-14">
@@ -169,7 +169,8 @@ function CaseStudyPage() {
         <div className="flex items-end justify-between border-b border-border pb-5">
           <h2 className="font-serif text-2xl text-foreground">Continue reading</h2>
           <Link
-            to="/work"
+            to="/"
+            hash="selected-work"
             className="font-accent text-xs uppercase tracking-[0.2em] text-foreground link-underline"
           >
             All work →
