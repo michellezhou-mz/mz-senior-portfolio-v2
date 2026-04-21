@@ -25,10 +25,10 @@ function HomePage() {
   const featured = projects.slice(0, 3);
 
   const proofPoints = [
-    { k: "01", t: "Design of AI chatbot & messaging at CommBank", d: "Shaping Ceba — one of Australia's most-used banking AI assistants." },
-    { k: "02", t: "$1M annual operational savings", d: "Through service redesign of high-risk, high-volume customer journeys." },
-    { k: "03", t: "Influenced $3M investment decision", d: "Translating customer truth into strategy senior leaders could act on." },
-    { k: "04", t: "Product, service & enterprise", d: "Across regulated finance, 0→1 startups, education and consumer." },
+    { k: "01", t: "Design AI messaging at CommBank", d: "Shaping Ceba, an AI assistant serving 17m customers at Australia's largest bank." },
+    { k: "02", t: "Delivered $1M annual savings", d: "Simplified a sensitive & complex journey to enable 90% straight-through processing." },
+    { k: "03", t: "Unlocked $3M investment decision", d: "Turned customer insight and market opportunity into a board-backed product direction." },
+    { k: "04", t: "Strategy, growth & execution", d: "Strong across discovery, monetisation, product design, and delivery." },
   ];
 
   return (
@@ -110,14 +110,14 @@ function HomePage() {
       <section className="container-editorial py-24 md:py-32">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
-            <p className="eyebrow text-muted-foreground">Proof</p>
+            <p className="eyebrow text-muted-foreground">RESULTS</p>
             <h2 className="display mt-4 text-4xl text-foreground md:text-5xl">
               Real outcomes, <br className="hidden md:inline" />
               not just deliverables.
             </h2>
             <p className="mt-6 max-w-sm text-foreground/75">
-              A senior designer measured by the value, clarity and momentum
-              created — across regulated enterprise and emerging product.
+              I’m measured by the clarity created, momentum built, and business
+              outcomes delivered, across enterprise systems and emerging products.
             </p>
           </div>
           <div className="grid gap-8 md:col-span-8 md:grid-cols-2">
