@@ -115,10 +115,6 @@ function HomePage() {
               Real outcomes, <br className="hidden md:inline" />
               not just deliverables.
             </h2>
-            <p className="mt-6 max-w-sm text-foreground/75">
-              I’m measured by the clarity created, momentum built, and business
-              outcomes delivered, across enterprise systems and emerging products.
-            </p>
           </div>
           <div className="grid gap-8 md:col-span-8 md:grid-cols-2">
             {proofPoints.map((p) => (
