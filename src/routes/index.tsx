@@ -29,8 +29,8 @@ function HomePage() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="container-editorial pt-16 pb-20 md:pt-24 md:pb-32">
-          <div className="grid gap-12 md:grid-cols-12 md:gap-10">
-            <div className="md:col-span-7">
+          <div className="grid gap-12 md:grid-cols-3 md:gap-10">
+            <div className="md:col-span-2">
               <p className="eyebrow reveal text-muted-foreground">
                 G'day — I'm Michelle
               </p>
@@ -60,7 +60,7 @@ function HomePage() {
               </div>
             </div>
 
-            <div className="reveal reveal-delay-2 md:col-span-5">
+            <div className="reveal reveal-delay-2 md:col-span-1">
               <div className="relative">
                 <div className="absolute -inset-4 -z-10 rounded-sm bg-secondary/60" />
                 <img
