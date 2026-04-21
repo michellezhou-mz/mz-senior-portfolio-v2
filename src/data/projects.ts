@@ -1,6 +1,6 @@
-import petpals from "@/assets/work-petpals.jpg";
-import google from "@/assets/work-google.jpg";
-import catalogue from "@/assets/work-catalogue.jpg";
+import petpals from "@/assets/work-petpals.png";
+import google from "@/assets/work-google.png";
+import catalogue from "@/assets/work-catalogue.png";
 import ceba from "@/assets/work-ceba.jpg";
 import deceased from "@/assets/work-deceased.jpg";
 
