@@ -22,7 +22,14 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
-  const featured = projects;
+  const featured = projects.slice(0, 3);
+
+  const proofPoints = [
+    { k: "01", t: "Designed AI experiences at CommBank", d: "Shaping Ceba — one of Australia's most-used banking AI assistants." },
+    { k: "02", t: "$1M annual operational savings", d: "Through service redesign of high-risk, high-volume customer journeys." },
+    { k: "03", t: "Influenced $3M investment decision", d: "Translating customer truth into strategy senior leaders could act on." },
+    { k: "04", t: "Product, service & enterprise", d: "Across regulated finance, 0→1 startups, education and consumer." },
+  ];
 
   return (
     <>
@@ -99,6 +106,38 @@ function HomePage() {
         </div>
       </section>
 
+      {/* PROOF / CREDIBILITY */}
+      <section className="container-editorial py-24 md:py-32">
+        <div className="grid gap-12 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <p className="eyebrow text-muted-foreground">Proof</p>
+            <h2 className="display mt-4 text-4xl text-foreground md:text-5xl">
+              Real outcomes, <br className="hidden md:inline" />
+              not just deliverables.
+            </h2>
+            <p className="mt-6 max-w-sm text-foreground/75">
+              A senior designer measured by the value, clarity and momentum
+              created — across regulated enterprise and emerging product.
+            </p>
+          </div>
+          <div className="grid gap-8 md:col-span-8 md:grid-cols-2">
+            {proofPoints.map((p) => (
+              <div key={p.k} className="border-t border-foreground/15 pt-6">
+                <p className="font-accent text-xs uppercase tracking-[0.22em] text-primary">
+                  {p.k}
+                </p>
+                <h3 className="mt-3 font-serif text-2xl text-foreground">
+                  {p.t}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/75">
+                  {p.d}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SELECTED WORK */}
       <section id="selected-work" className="container-editorial py-24 md:py-32 scroll-mt-24">
         <div>
@@ -153,6 +192,16 @@ function HomePage() {
               </span>
             </Link>
           ))}
+        </div>
+
+        <div className="mt-16 flex justify-center">
+          <Link
+            to="/work"
+            className="group inline-flex items-center gap-3 rounded-sm border border-foreground/20 px-6 py-4 font-accent text-xs uppercase tracking-[0.22em] text-foreground transition-colors hover:bg-foreground hover:text-background"
+          >
+            Read more — view all work
+            <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+          </Link>
         </div>
       </section>
 
