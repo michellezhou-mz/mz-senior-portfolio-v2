@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { projects } from "@/data/projects";
+import { projects, type Project, type CaseStudySection } from "@/data/projects";
 
 export const Route = createFileRoute("/work/$slug")({
   head: ({ params }) => {
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/work/$slug")({
       ],
     };
   },
-  loader: ({ params }) => {
+  loader: ({ params }): { project: Project } => {
     const project = projects.find((p) => p.slug === params.slug);
     if (!project) throw notFound();
     return { project };
@@ -64,7 +64,7 @@ function CaseStudyPage() {
         <div className="mt-10 grid gap-10 md:grid-cols-12 md:gap-14">
           <div className="md:col-span-8">
             <div className="flex flex-wrap items-center gap-2">
-              {project.tags.map((t) => (
+              {project.tags.map((t: string) => (
                 <span
                   key={t}
                   className="rounded-full border border-border px-3 py-1 font-accent text-[10px] uppercase tracking-[0.22em] text-muted-foreground"
@@ -147,7 +147,7 @@ function CaseStudyPage() {
       {/* SECTIONS */}
       <section className="container-editorial mt-20 md:mt-28">
         <div className="mx-auto max-w-3xl space-y-16 md:space-y-20">
-          {project.caseStudy.sections.map((s, i) => (
+          {project.caseStudy.sections.map((s: CaseStudySection, i: number) => (
             <div key={s.heading}>
               <p className="font-accent text-xs uppercase tracking-[0.22em] text-primary">
                 {String(i + 1).padStart(2, "0")}
