@@ -73,12 +73,7 @@ function HomePage() {
                   className="aspect-[4/5] w-full rounded-sm object-cover"
                   style={{ boxShadow: "var(--shadow-editorial)" }}
                 />
-                <div className="absolute -bottom-6 -left-6 hidden bg-primary px-5 py-4 text-primary-foreground md:block">
-                  <p className="font-accent text-[10px] uppercase tracking-[0.22em] opacity-80">
-                    Currently
-                  </p>
-                  <p className="mt-1 font-serif text-base">Open to lead roles</p>
-                </div>
+              </div>
               </div>
             </div>
           </div>
