@@ -47,7 +47,8 @@ export const Route = createFileRoute("/work/$slug")({
 });
 
 function CaseStudyPage() {
-  const { project } = Route.useLoaderData();
+  const data = Route.useLoaderData() as { project: Project };
+  const { project } = data;
   const others = projects.filter((p) => p.slug !== project.slug).slice(0, 2);
 
   return (
