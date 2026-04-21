@@ -25,7 +25,7 @@ function HomePage() {
   const featured = projects.slice(0, 3);
 
   const proofPoints = [
-    { k: "01", t: "Designed AI experiences at CommBank", d: "Shaping Ceba — one of Australia's most-used banking AI assistants." },
+    { k: "01", t: "Design of AI chatbot & messaging at CommBank", d: "Shaping Ceba — one of Australia's most-used banking AI assistants." },
     { k: "02", t: "$1M annual operational savings", d: "Through service redesign of high-risk, high-volume customer journeys." },
     { k: "03", t: "Influenced $3M investment decision", d: "Translating customer truth into strategy senior leaders could act on." },
     { k: "04", t: "Product, service & enterprise", d: "Across regulated finance, 0→1 startups, education and consumer." },
